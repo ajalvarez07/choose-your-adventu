@@ -1,0 +1,153 @@
+//variables
+int introChoice, middleChoice1,middleChoice2, middleChoice3;
+char name[20];
+char name2[20];
+//6 functions
+void intro(){
+    printf("             Intro               \n");
+    printf("middle 1    middle 2    middle 3 \n");
+    printf("endings     endings     endings\n");
+    printf(" 1 2 3       4 5 6       7 8 9\n");   
+    printf("What's the first players name: ");
+    scanf("%s", &name);
+    printf("What's the 2nd players name: ");
+    scanf("%s", &name2);
+    printf("You  people are in a game called Martial Arts Select \n");
+    printf( name," and ", name2 ," your are in a universe where strength and battle is your life. Train hard to increase strength. By choosing a mentor it gives you certain super attacks. Also it gives you a Martial Art to master. Have Fun!" );
+    printf("make your middle choice: 1, 2, or 3\n");
+    scanf("%i", &introChoice);
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+//middle1
+void middle1(){
+printf(name ," you and ", name2 , " have chosen Baki as your mentor. He is very quick and brutal. He is known as the Strongest man in the world.. He was trained by his father who abused him.. You will train to become a black belt in karate");
+printf(" make your end choice: 1, 2, or 3\n");
+scanf("%i", &middleChoice1);
+while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+printf("That is not a choice. Please choose '1', '2', or '3'\n");
+scanf("%i", &middleChoice1);
+    }
+}
+
+//middle2
+void middle2(){
+printf(name ," you and ", name2 , " chose Master Roshi as your Mentor. Which means you are getting to learn Jiu Jitsu. He is very strong and good at teaching beginners. Some of his students are famous like Yamcha, Goku, and Krillin. He is very strict and pushes you to your peak. Have fun becoming a black belt. ");
+printf( "make your end choice: 4, 5, or 6\n");
+scanf("%i", &middleChoice2);
+while(middleChoice2 != 4 && middleChoice2 != 5 && middleChoice2 != 6){
+printf("That is not a choice. Please choose '4', '5', or '6'\n");
+scanf("%i", &middleChoice1);
+    }
+}
+//middle3
+void middle3(){
+printf(name ," you and ", name2 , " chose All Might as your Mentor.Which means you will be training to be a karate master. He is very strong and good at teaching weaklings. One of his students is famous. His name is Deku. He is very positive and brutal. Have fun becoming a black belt. ");
+printf( "make your end choice: 7, 8, or 9\n");
+scanf("%i", &middleChoice3);
+while(middleChoice3 != 7 && middleChoice3 != 8 && middleChoice3 != 9){
+printf("That is not a choice. Please choose '7', '8', or '9'\n");
+scanf("%i", &middleChoice3);
+    }
+
+//endings
+}
+void end1(){
+printf("Your special move is Kamehameha. You have lots of strength.", name , " and ",name2," You guys are the leading champions in a tournament called The Battle of Ragnarok. Your one and only strength is grappling.");
+    exit (1);
+
+}
+void end2(){
+printf("Your special move is Dragon Fist. You unleash dragons while using all your energy. ", name ," and ", name2 ," use this move only in a life or death situation because it  knocks the user unconscious. Your grappling is your strength. This was the best ending because you learned ki blast as well. They shoot small balls of energy out of your palm.");
+    exit (2);
+
+}
+void end3(){
+printf("Your special move is Bulk. Bulk is a move where ", name , " and ",name2," get a huge ripped body where it boosts your strength but your speed slows down. Also your Stamina is very, very bad when using it, there is a secret where the users can make the bulk not powerful and become quick but that legend is long forgotten. Your grappling is amazing. ");
+    exit (3);
+
+}
+void end4(){
+printf("Your special move is  thunder clap and flash. ", name ," and ",name2 ," you put energy in your legs and move super fast at lightning speeds. Your energy form is called thunder breathing. You only know thunder breathing form. It is one of the best forms of breathing. Have fun with moving insanely fast.");
+    exit (1);
+
+}
+void end5(){
+printf(name, " and " , name2 , " your special move is called Ultra Instinct. you move faster than thunder breathing. You are the best out of the game and no one knows yet. you are rivaled with the gods of destruction from Dragon Ball. You're insanely overpowered. Have fun. ");
+    exit (2);
+
+}
+void end6(){
+printf("Your special move is shrink.Shrink is a move where ", name , " and ",name2," get small like an ant where it boosts you to keep your strength and speed . also your Stamina is very, very normal when using it, You are capable of drowning super easily and also being decently good at striking. Your grappling is garbage.  ");
+    exit (3);
+
+}
+void end7(){
+printf(name, " and " , name2 , " your special move is called alcoholism. you move super slow. You are the worst out of the game and no one knows yet. you are rivaled with a donut . You're garbage. Have fun");
+    exit (1);
+
+}
+void end8(){
+printf("Your special move is bomb hands.", name , " and ",name2,"use your hands to create explosions. This is a type of quirk. You are rivaled with bakugou from My Hero Academia. This comes with a lot of anger. It's too the point you need to be the best.  ");
+    exit (2);
+
+}
+void end9(){
+printf(name, " and " , name2 , " your special move is called Mind Magic. you things with your mind. You are the 10th best out of the game and no one knows yet. You're rivaled with vision from the avengers. You are ok at striking with your mind.. Have fun ");
+    exit (3);
+
+}
+
+
+
+
+int main(){  //main program to run (logic)
+    intro(5, "bob");
+    if(1 == introChoice){
+        middle1();
+        if(middleChoice1 == 1){
+            end1();
+        }
+        if(middleChoice1 == 2){
+            end2();
+        }
+        if(middleChoice1 == 3){
+            end3();
+        }
+
+    }
+    if(2 == introChoice){
+        middle2();
+        if(middleChoice2 == 4){
+            end4();
+        }
+        if(middleChoice2 == 5){
+            end5();
+        }
+        if(middleChoice2 == 6){
+            end6();
+        }
+
+    }
+        
+
+    if(3 == introChoice){
+        middle3();
+        if(middleChoice3 == 7){
+            end7();
+        }
+        if(middleChoice3 == 8){
+            end8();
+        }
+        if(middleChoice3 == 9){
+            end9();
+        }
+
+    }
+        
+}
+
+
+
